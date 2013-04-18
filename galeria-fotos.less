@@ -1,0 +1,348 @@
+/*********** INICIO "EVENTOS"******************/
+.eventos{
+    .destaque-eventos{
+        margin-bottom: 50px;
+
+        >div{
+            width: 460px;
+            display: inline-block;
+            vertical-align: top;
+
+            img{
+                margin-right: 16px;
+            }
+
+            h3{
+                display: block;
+                .museo700_16;
+                text-transform: none;
+            }
+
+            a{
+                display: block;
+                .museo700_16;
+                text-transform: none;
+                margin-bottom: 15px;  
+            }
+
+            .descricao{
+                width: 340px;
+                display: inline-block;
+                vertical-align: top;
+
+                span{
+                    display: block;
+                     .museo300_14;
+                }
+            }
+        }
+    }
+
+    .filtro{
+        margin-top: 0px;
+    }
+
+    .lista-conteudo{
+
+        .item-evento{
+            border-bottom: 1px solid @cinza;
+            padding-bottom: 20px;
+            margin-top: 25px;
+        }
+
+        a{
+            display: block;
+            text-transform: none;
+            .museo700_16;
+            margin-bottom: 15px; 
+        }
+
+        .info-imagem{
+            display: inline-block;
+            vertical-align: top;
+            margin-right: 16px;
+        }
+
+        .info{
+            display: inline-block;
+            width: 520px;
+            vertical-align: top;
+        }
+
+        span{
+            display: block;
+             .museo300_14;
+        }
+    }
+
+    .paginacao{
+        a{
+            display: inline-block;
+            .museo300_12;
+        }
+    }
+
+    .detalhe-evento{
+
+        margin-bottom: 60px;
+
+         .info-imagem{
+            display: inline-block;
+            vertical-align: top;
+            margin-right: 16px;
+        }
+
+        .info{
+            display: inline-block;
+            width: 400px;
+            vertical-align: top;
+        }
+
+        span{
+            display: block;
+             .museo300_14;             
+        }
+
+        a.bt-veja-evento{
+            display: block;
+            .museo700_14;
+            width: 187px;
+            height: 18px;
+            background: @preto;
+            margin-top: 16px;
+            color: @branco;
+            text-transform: uppercase;
+            padding: 5px;
+            text-align: center;
+        }
+    }
+
+    .programacao{
+
+        h3{
+            .museo100_25;
+        }
+
+        p{
+            width: 640px;
+            margin-bottom: 10px;
+
+        }
+
+        .programacao-hora{
+            border-bottom: 1px solid @cinza;
+            margin-bottom: 20px;                       
+        }
+
+        p + .programacao-hora{
+            border-top: 1px solid @cinza;
+            padding-top: 10px;
+            margin-top: 40px;
+        }         
+    }
+
+    .como-foi{
+        width: 940px;
+
+        h3{
+            .museo100_25;
+        }
+
+        .historico{
+
+            width: 860px;
+
+            .info-imagem{
+               width: 240px;
+                margin-right: 20px;
+                display: inline-block;
+                vertical-align: top;
+            }
+
+            .info{
+                width: 520px;
+                display: inline-block;
+            }
+        }
+
+        .fotos{
+             width: 860px;
+
+             .galeria-main{
+                width: 706px;
+                margin: 0 auto;
+             }
+
+            .galeria-lat-esq{
+                width: 84px;
+                display: inline-block;
+                vertical-align: top;
+            }
+
+            .galeria-meio{
+                width: 530px;
+                display: inline-block;
+                overflow: hidden;
+            }
+
+            .total-fotos{
+                position: relative;
+
+                >div{
+                    width: 530px;
+                    display: inline-block;
+                }
+            }
+
+            .galeria-lat-dir{
+                width: 84px;
+                display: inline-block;
+                vertical-align: top;
+
+                span{
+                    float: right;
+                    .museo300_14;
+                    height: 20px;
+                }
+            }
+
+            .legenda{
+               
+            }
+
+            .galeria-rodape{
+
+                .box-thumbs{
+                    width: 748px;
+                    display: inline-block;
+                    overflow: hidden;
+                }
+                
+                .thumbs{
+                    display: inline-block;
+                    position: relative;
+
+                    >div{
+                        width: 90px;
+                        height: 65px;
+                        background: @preto;
+                        display: inline-block;                        
+                    }
+                }
+
+            }
+        }
+
+        .arquivo{
+
+            >div{
+                width: 200px;
+                display: inline-block;
+                margin-right: 100px;
+            }
+
+            .item-arquivo{
+                margin-bottom: 10px;
+
+                a{
+                    .museo700_14;
+                    text-transform: none;
+                    color: @cinza-claro;
+                    display: block;
+
+                    &:hover{
+                        color: @azul;
+                    }
+
+                    span{
+                        .museo300_14;
+                        color: @preto;
+                    }
+                }                
+            }
+        }
+
+        .seta-anterior{
+            width: 25px;
+            height: 61px;
+            background: url("/img/seta-esq.png");
+            margin-top: 180px;
+            cursor: pointer;
+            display: none;
+        }
+
+        .seta-anterior:hover{
+            background-position: 0 -61px;
+        }
+
+        .seta-proximo{
+            width: 25px;
+            height: 61px;
+            background: url("/img/seta-dir.png");
+            margin-top: 160px;
+            float: right;
+            cursor: pointer;
+        }
+
+        .seta-proximo:hover{
+            background-position: 0 -61px;
+        }
+
+        .mask{
+            display: inline-block;
+            width: 25px;
+            height: 61px;
+            vertical-align: top;
+            margin-right: 15px;
+        }
+
+        .seta-anterior-thumb{
+            display: none ;
+            width: 25px;
+            height: 61px;
+            vertical-align: top;
+            background: url("/img/seta-esq.png");
+            cursor: pointer;
+            margin-right: 15px;
+        }
+
+        .seta-anterior-thumb:hover{
+            background-position: 0 -61px;
+        }
+
+        .seta-proximo-thumb{
+            width: 25px;
+            display: inline-block;
+            height: 61px;
+            background: url("/img/seta-dir.png");
+            cursor: pointer;
+            margin-left: 15px;
+        }
+
+        .seta-proximo-thumb:hover{
+            background-position: 0 -61px;
+        }
+
+        .videos{
+
+            h4{
+                .museo700_14;
+                text-transform: none;
+                margin-bottom: 20px;
+            }
+
+            .tela-video{
+                width: 500px;
+                display: inline-block;
+                vertical-align: top;
+                margin-right: 40px;
+            }
+
+            .info-video{
+                width: 260px;
+                display:inline-block;
+            }
+        }
+    }
+}    
+/*********** FIM "EVENTOS"******************/
